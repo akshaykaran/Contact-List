@@ -1,6 +1,9 @@
 const express = require ('express');
 const path = require('path');
+const env = require("dotenv").config();
 const port = process.env.PORT || 8000;
+
+
 
 
 const db = require('./config/mongoose');
@@ -81,7 +84,7 @@ app.post('/create-contact', function(req, res){
             if(err){console.log('error in creating a contact!');
             return;}
 
-            console.log('***********', newContact);
+            // console.log('***********', newContact);
             return res.redirect('back');
         });
 
