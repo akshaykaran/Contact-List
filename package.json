@@ -1,0 +1,17 @@
+{
+  "name": "contact_list",
+  "version": "1.0.0",
+  "description": "a basic contact list to learn Express JS as a framework",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon index.js"
+  },
+  "author": "Akshay Vinayak",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
