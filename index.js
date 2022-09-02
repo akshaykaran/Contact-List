@@ -112,14 +112,9 @@ app.get('/delete-contact', function(req, res){
 
 
 
-// app.listen(port, function(err){
-//     if (err){
-//         console.log('error in running the server', err);
-//     }console.log('Yep!My Express server is running on Port:', port);
+app.listen(port, function(err){
+    if (err){
+        console.log('error in running the server', err);
+    }console.log('Yep!My Express server is running on Port:', port);
     
-// });
-
-server.on('clientError', (err, socket) => {
-    console.error(err);
-    socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
-  });
+});
